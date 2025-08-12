@@ -27,9 +27,17 @@
   </head>
   <body>
     <div class="container">
-      <div class="image-container">
-        <img src="" alt="perfume" />
-      </div>
+      <picture>
+        <source
+          media=" (orientation:landscape)"
+          srcset="images/image-product-desktop.jpg"
+        />
+        <source
+          media=" (orientation:portrait)"
+          srcset="images/image-product-mobile.jpg"
+        />
+        <img src="images/image-product-mobile.jpg" alt="Perfume" />
+      </picture>
       <div class="text-container">
         <span>Perfume</span>
 

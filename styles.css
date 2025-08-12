@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+  color: hsl(228, 12%, 48%);
+  font-family: Fraunces;
+  font-weight: 500;
+}
+.container {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 10rem auto;
+  display: grid;
+}
+.text-container {
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.perfume {
+  letter-spacing: 0.5em;
+  font-family: Montserrat;
+}
+p {
+  font-family: Montserrat;
+}
+picture {
+  border-radius: 1rem;
+}
+picture img {
+  display: block;
+}
+img {
+  max-width: 100%;
+}
+h1 {
+  color: hsl(212, 21%, 14%);
+  font-size: 28px;
+  font-weight: 700;
+}
+.price-cont{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.price {
+  color: hsl(158, 36%, 37%);
+  font-size: 28px;
+  font-weight: 700;
+}
+.old-price {
+  text-decoration: line-through;
+  vertical-align: middle;
+}
+button {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  padding:1rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  font-family: Montserrat;
+}
+button:hover {
+  background-color: hsl(158, 42%, 18%);
+  transition-duration: 1s;
+  cursor: pointer;
+}
+.cart-img{
+    width: 0.8rem;
+    padding-right: 0.2rem;
+}
+@media (orientation: portrait) {
+  .container {
+    width: 70%;
+  }
+}
+@media (orientation: landscape) {
+  .container {
+    width: 35%;
+    grid-template-columns: 1fr 1fr;
+  }
+  picture img{
+    height: 100%;
+  }
+}
